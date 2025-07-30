@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Upload, CheckCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 export default function KYCDetails() {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -27,11 +28,13 @@ export default function KYCDetails() {
     }));
   };
 
+  const navigate = useNavigate();
   const handleContinue = () => {
     console.log('Form Data:', formData);
     console.log('Uploaded Documents:', uploadedDocs);
     // Handle form submission logic here
-    window.location.href = '/account-selection';
+    // window.location.href = '/account-selection';
+    navigate('/account-selection');
   };
 
   const formatSSN = (value) => {

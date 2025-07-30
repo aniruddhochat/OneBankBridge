@@ -12,7 +12,8 @@ const Home = () => {
   
   const handleLogout = () => {
   localStorage.removeItem('user'); // Remove saved user data
-  window.location.href = '/'; // Redirect to home or login page
+  // window.location.href = '/'; // Redirect to home or login page
+  navigate('/');
   };
   useEffect(() => {
     const userData = JSON.parse(localStorage.getItem('user'));

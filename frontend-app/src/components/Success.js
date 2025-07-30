@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { CheckCircle } from 'lucide-react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+
 export default function Success({ onBackToHome }) {
   const location = useLocation();
   const updatedAccountIds = location.state?.updatedAccountIds || [];
@@ -115,13 +116,15 @@ export default function Success({ onBackToHome }) {
     const str = accountNumber.toString();
     return '****' + str.slice(-4);
   };
-
+  
+  const navigate = useNavigate();
   const handleBackToHome = () => {
     if (onBackToHome) {
       onBackToHome();
     } else {
       // Fallback navigation
-      window.location.href = '/dashboard';
+      // window.location.href = '/dashboard';
+      navigate('/dashboard');
     }
   };
 
