@@ -11,6 +11,9 @@ import Accounts from './components/Accounts';
 import RewardsBazaar from './components/RewardsBazaar';
 import Profile from './components/Profile';
 import Dashboard from './components/Dashboard';
+import Features from './components/Features';
+import About from './components/About';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
           <Route path="/rewards" element={<RewardsBazaar />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
       </div>
     </Router>

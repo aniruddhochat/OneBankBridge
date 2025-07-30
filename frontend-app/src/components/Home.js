@@ -112,7 +112,21 @@ const Home = () => {
               {['Home', 'Features', 'About', 'Contact'].map((tab) => (
                 <button
                   key={tab}
-                  onClick={() => setActiveTab(tab.toLowerCase())}
+                  onClick={() => {
+                    if (tab.toLowerCase()==='home'){
+                        navigate('/');
+                    }
+                    else if (tab.toLowerCase()==='features') {
+                        navigate('/features');
+                    }
+                    else if (tab.toLowerCase()==='about'){
+                        navigate('/about');
+                    }
+                    else if (tab.toLowerCase() === 'contact'){
+                        navigate('/contact-us')
+                    }
+                    setActiveTab(tab.toLowerCase());
+                  }}
                   className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                     activeTab === tab.toLowerCase()
                       ? 'bg-blue-600 text-white shadow-lg transform scale-105'
