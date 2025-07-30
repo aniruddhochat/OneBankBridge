@@ -8,7 +8,10 @@ const accountRoutes = require('./routes/accounts');
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ['https://onebankbridge-1.onrender.com/', 'http://localhost:3000'],
+  credentials: true
+}));
 app.use(bodyParser.json());
 
 connectDB();
