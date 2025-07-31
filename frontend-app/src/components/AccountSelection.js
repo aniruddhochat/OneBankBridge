@@ -11,7 +11,11 @@ export default function AccountSelection() {
   useEffect(() => {
     const fetchPendingAccounts = async () => {
       try {
-        const userId = "687f171378161830fc3425fd";
+        // const userId = "687f171378161830fc3425fd";
+        const storedUser = localStorage.getItem('user');
+        const parsedUser = storedUser ? JSON.parse(storedUser) : null;
+        const userId = parsedUser._id;
+        
         setLoading(true);
         const response = await fetch(`${process.env.REACT_APP_API_URL}/user/accounts/${userId}/status/PENDING`);
         

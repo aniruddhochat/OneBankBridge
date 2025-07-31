@@ -849,7 +849,10 @@ const AccountsPage = () => {
   const fetchAccounts = async () => {
     try {
       setIsLoading(true);
-      const userId = "687f171378161830fc3425fd";
+      // const userId = "687f171378161830fc3425fd";
+      const storedUser = localStorage.getItem('user');
+      const parsedUser = storedUser ? JSON.parse(storedUser) : null;
+      const userId = parsedUser._id;
       
       console.log('📡 Fetching existing accounts from MongoDB...');
       
@@ -903,7 +906,7 @@ const AccountsPage = () => {
       
       // Show success message
       setTimeout(() => {
-        alert(`✅ Successfully connected and saved ${data.accounts[0].bankName} account to MongoDB!`);
+        alert(`✅ Account ${data.accounts[0].bankName} added successfully!`);
       }, 100);
       
     } catch (error) {
