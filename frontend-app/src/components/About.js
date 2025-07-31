@@ -89,56 +89,57 @@ const About = () => {
     }
   ];
 
-  const team = [
-    {
-      name: 'Nu Nu Nuam',
-      role: 'Chief Executive Officer',
-      bio: 'Former VP of Compliance at JPMorgan Chase with 15+ years in financial services',
-      image: `${process.env.PUBLIC_URL}/assets/images/nunu.png`,
-      linkedin: '#',
-      twitter: '#'
-    },
-    {
-      name: 'Aniruddho Chatterjee',
-      role: 'Chief Technology Officer',
-      bio: 'Ex-Google engineer specializing in AI/ML and enterprise security solutions',
-      image: `${process.env.PUBLIC_URL}/assets/images/aniruddho.png`,
-      linkedin: '#',
-      twitter: '#'
-    },
-    {
-      name: 'Sofia Chien',
-      role: 'Chief Marketing Officer',
-      bio:  'Seasoned marketing leader with a track record of driving brand growth, digital strategy, and customer engagement across global financial markets.',
-      image: `${process.env.PUBLIC_URL}/assets/images/sofia.png`,
-      linkedin: '#',
-      twitter: '#'
-    },
-    {
-      name: 'Gia Douglass',
-      role: 'Chief Compliance Officer',
-      bio: 'Leading our technical team with expertise in scalable cloud architecture',
-      image: `${process.env.PUBLIC_URL}/assets/images/gia.png`,
-      linkedin: '#',
-      twitter: '#'
-    },
-    {
-      name: 'Armando Azar Andere',
-      role: 'VP of Product',
-      bio: 'Product strategist focused on creating intuitive user experiences',
-      image: `${process.env.PUBLIC_URL}/assets/images/armando.png`,
-      linkedin: '#',
-      twitter: '#'
-    },
-    {
-      name: 'Halle R Wine',
-      role: 'VP of Sales',
-      bio: 'Enterprise sales leader with a track record of building lasting partnerships',
-      image: `${process.env.PUBLIC_URL}/assets/images/halle.png`,
-      linkedin: '#',
-      twitter: '#'
-    }
-  ];
+const team = [
+  {
+    name: 'Nu Nu Nuam',
+    role: 'Chief Executive Officer',
+    bio: 'Visionary leader with deep regulatory expertise and a passion for financial innovation.',
+    image: `${process.env.PUBLIC_URL}/assets/images/nunu.png`,
+    linkedin: '#',
+    twitter: '#'
+  },
+  {
+    name: 'Aniruddho Chatterjee',
+    role: 'Chief Technology Officer',
+    bio: 'Tech innovator driving scalable AI and secure infrastructure solutions.',
+    image: `${process.env.PUBLIC_URL}/assets/images/aniruddho.png`,
+    linkedin: '#',
+    twitter: '#'
+  },
+  {
+    name: 'Sofia Chien',
+    role: 'Chief Marketing Officer',
+    bio: 'Growth strategist building brand trust through bold, data-driven campaigns.',
+    image: `${process.env.PUBLIC_URL}/assets/images/sofia.png`,
+    linkedin: '#',
+    twitter: '#'
+  },
+  {
+    name: 'Gia Douglass',
+    role: 'Chief Compliance Officer',
+    bio: 'Compliance expert ensuring regulatory integrity across all operations.',
+    image: `${process.env.PUBLIC_URL}/assets/images/gia.png`,
+    linkedin: '#',
+    twitter: '#'
+  },
+  {
+    name: 'Armando Azar Andere',
+    role: 'VP of Product',
+    bio: 'Product leader crafting intuitive and impactful user experiences.',
+    image: `${process.env.PUBLIC_URL}/assets/images/armando.png`,
+    linkedin: '#',
+    twitter: '#'
+  },
+  {
+    name: 'Halle R Wine',
+    role: 'VP of Sales',
+    bio: 'Sales executive focused on driving growth through strong client relationships.',
+    image: `${process.env.PUBLIC_URL}/assets/images/halle.png`,
+    linkedin: '#',
+    twitter: '#'
+  }
+];
+
 
   const stats = [
     { number: "2M+", label: "Verified Users" },
