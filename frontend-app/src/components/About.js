@@ -109,7 +109,7 @@ const About = () => {
     {
       name: 'Sofia Chien',
       role: 'Chief Marketing Officer',
-      bio: 'Former regulatory advisor with deep expertise in global financial compliance',
+      bio:  'Seasoned marketing leader with a track record of driving brand growth, digital strategy, and customer engagement across global financial markets.',
       image: `${process.env.PUBLIC_URL}/assets/images/sofia.png`,
       linkedin: '#',
       twitter: '#'
