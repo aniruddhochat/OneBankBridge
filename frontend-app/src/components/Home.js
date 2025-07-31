@@ -215,7 +215,7 @@ const Home = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-105 shadow-xl">
+                <button onClick={() => navigate('/signint')} className="flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-105 shadow-xl">
                   Get Started Free
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </button>
@@ -385,7 +385,7 @@ const Home = () => {
             Get started today with our free trial.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-white text-blue-600 rounded-xl font-medium hover:bg-gray-50 transition-all duration-200 transform hover:scale-105 shadow-lg">
+            <button onClick={() => navigate('/signint')} className="px-8 py-4 bg-white text-blue-600 rounded-xl font-medium hover:bg-gray-50 transition-all duration-200 transform hover:scale-105 shadow-lg">
               Start Free Trial
             </button>
             <button className="px-8 py-4 bg-transparent text-white border-2 border-white rounded-xl font-medium hover:bg-white hover:text-blue-600 transition-all duration-200">
@@ -437,7 +437,7 @@ const Home = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 OneBankBridge. All rights reserved.</p>
+            <p>&copy; 2025 OneBankBridge. All rights reserved.</p>
           </div>
         </div>
       </footer>

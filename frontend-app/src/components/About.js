@@ -6,6 +6,8 @@ import {
 } from 'lucide-react';
 import Logo from '../logo.png';
 import { useNavigate } from 'react-router-dom';
+
+
 const About = () => {
   const [activeTab, setActiveTab] = useState('about');
   const [isScrolled, setIsScrolled] = useState(false);
@@ -89,50 +91,50 @@ const About = () => {
 
   const team = [
     {
-      name: 'Sarah Chen',
+      name: 'Nu Nu Nuam',
       role: 'Chief Executive Officer',
       bio: 'Former VP of Compliance at JPMorgan Chase with 15+ years in financial services',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face',
+      image: `${process.env.PUBLIC_URL}/assets/images/nunu.png`,
       linkedin: '#',
       twitter: '#'
     },
     {
-      name: 'Michael Rodriguez',
+      name: 'Aniruddho Chatterjee',
       role: 'Chief Technology Officer',
       bio: 'Ex-Google engineer specializing in AI/ML and enterprise security solutions',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
+      image: `${process.env.PUBLIC_URL}/assets/images/aniruddho.png`,
       linkedin: '#',
       twitter: '#'
     },
     {
-      name: 'Emily Thompson',
-      role: 'Chief Compliance Officer',
+      name: 'Sofia Chien',
+      role: 'Chief Marketing Officer',
       bio: 'Former regulatory advisor with deep expertise in global financial compliance',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face',
+      image: `${process.env.PUBLIC_URL}/assets/images/sofia.png`,
       linkedin: '#',
       twitter: '#'
     },
     {
-      name: 'David Kim',
-      role: 'VP of Engineering',
+      name: 'Gia Douglass',
+      role: 'Chief Compliance Officer',
       bio: 'Leading our technical team with expertise in scalable cloud architecture',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+      image: `${process.env.PUBLIC_URL}/assets/images/gia.png`,
       linkedin: '#',
       twitter: '#'
     },
     {
-      name: 'Lisa Patel',
+      name: 'Armando Azar Andere',
       role: 'VP of Product',
       bio: 'Product strategist focused on creating intuitive user experiences',
-      image: 'https://images.unsplash.com/photo-1559583985-c80d8ad9b29f?w=400&h=400&fit=crop&crop=face',
+      image: `${process.env.PUBLIC_URL}/assets/images/armando.png`,
       linkedin: '#',
       twitter: '#'
     },
     {
-      name: 'James Wilson',
+      name: 'Halle R Wine',
       role: 'VP of Sales',
       bio: 'Enterprise sales leader with a track record of building lasting partnerships',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face',
+      image: `${process.env.PUBLIC_URL}/assets/images/halle.png`,
       linkedin: '#',
       twitter: '#'
     }
